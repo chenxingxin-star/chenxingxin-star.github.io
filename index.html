@@ -195,9 +195,10 @@
 <p>I am a master's student advised by Professor <a href="https://person.zju.edu.cn/zhangyu#0">Yu Zhang</a>, at <a href="http://www.cse.zju.edu.cn/" target="_blank" rel="noopener">College of Control Science and Engineering</a>, 
 <a href="https://www.zju.edu.cn/" target="_blank" rel="noopener">Zhejiang University</a>. 
 
-<p> My research interests lie in <b>visual SLAM in degraded environments</b>, <b>thermal SLAM</b>, and <b>LiDAR-visual-inertial odometry</b>. Currently,
-   I am making thermal cameras working in challenging environments, such as poor illumination and smoke. 
-   I am also making efforts to implement a robust SLAM system by fusing LiDAR, thermal, and inertial sensors.
+<p> My research interests lie in <b>Visual SLAM</b>, <b>thermal odometry/SLAM</b>. Currently,
+   I am focusing on thermal SLAM in challenging environments, such as poor illumination and smoke. 
+   I am also working at  visual-inertial-wheel odometry for autonomous driving system.
+   <!-- I am also making efforts to implement a robust SLAM system by fusing LiDAR, thermal, and inertial sensors. -->
 <!-- <ul> -->
 <!-- <li>Thermal-Inertial SLAM</li> -->
 <!-- <li>Thermal-LiDAR-Inertial SLAM</li> -->
@@ -303,6 +304,35 @@
     </div>
     <div class="row">
         <ul class="ul-papers">
+
+          <li>
+            <div class="img">
+              <img src="/papers/images/horizon_logo.png" class="img-responsive" alt="">
+            </div>
+          <div class="description">
+            <p class="position"> <b>SLAM Algorithm Intern</b></p>
+            <p class="company">
+              <a href="https://cn.horizonrobotics.com/index.html">Horizon Robotics</a>, Shanghai, China.  2023/05 - now
+            </p>
+            <p class="title">Visual-Inertial-Wheel Odometry for Autonomous Driving System</p>
+            <!-- <p class="abstrast"><b>Project Introduction:</b> For indoor AR navigation, visual SLAM methods frequently degrade in challenging environments such as low texture and fast motion.
+                Aided with IMU, the robustness can be improved. However, IMU propagation faces the challenging of accumulated error due to the inherent noise and bias.
+               The project aims to improve the robustness of visual-inertial SLAM by integrating an learned inertial odometry.  -->
+               <!-- When the VIO loses tracking, the system 
+               switches to inertial dead reckoning mode. The position are predicted by an deep neural network, using inertial measuments only. Once the visual tracking
+               recovers, the VIO continue to perform pose estimation using traditional methods. After that, the system will perform pose graph optimization if loop closure or global localization (low frequency, provided by pre-built map)
+              is available. The proposed deep inertial method can provide relatively accurate pose estimation about 15s, which is much longer than the imu propagation (about 1s).                     -->
+            </p>
+            <!-- <p class="venue"> IEEE Winter Conference on Applications of Computer Vision  (<b>WACV</b>), 2023 <span style="font-weight:normal"> </span></p>                     -->
+            <p class="resources">
+              [
+                <!-- <a href="http://www.soopat.com/Patent/202210093752#this">patent</a> / -->
+                <a href="">video</a> 
+              ]
+            </p>
+          </div>
+        </li>
+
         <li>
             <div class="img">
               <img src="/papers/images/orbbec_orb3_tlio.png" class="img-responsive" alt="">
@@ -330,7 +360,6 @@
             </p>
           </div>
         </li>
-
 
         </ul>      
     </div>  
